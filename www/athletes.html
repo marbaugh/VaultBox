@@ -28,23 +28,31 @@
         <title>Vault Box</title>
     </head>
     <body>
-        <div class="app">
-            <h1>Vault Box</h1>
-            <div class="ui-btn">
-                Athletes
-                <a href="athletes.html" class="ui-btn ui-shadow ui-corner-all ui-icon-plus ui-btn-icon-notext ui-btn-inline">Plus</a>
-                <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline">Edit</a>
-                <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-eye ui-btn-icon-notext ui-btn-inline">Eye</a>
-            </div>
-            
-            <div class="ui-btn">
-                Events
-                <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-plus ui-btn-icon-notext ui-btn-inline">Plus</a>
-                <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline">Minus</a>
-                <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-eye ui-btn-icon-notext ui-btn-inline">Eye</a>
-            </div>
-
+        <h1>Vault Box</h1>
+        <h2>New Athlete</h2>
+        
+        <label for="text-basic">Athletes Name:</label>
+        <input type="text" name="text-basic" id="text-basic" value="Name/Description">
+        
+        <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                <legend>Gender:</legend>
+                    <input type="radio" name="radio-choice-b" id="radio-choice-c" value="Male">
+                    <label for="radio-choice-c">Male</label>
+                    <input type="radio" name="radio-choice-b" id="radio-choice-d" value="Female">
+                    <label for="radio-choice-d">Female</label>
+        </fieldset>
+        
+                
+        <div class="ui-field-contain">
+            <label for="select-native-fc">Year:</label>
+            <select name="select-native-fc" id="select-native-fc">
+                <option value="Freshman">Freshman</option>
+                <option value="Sophomore">Sophomore</option>
+                <option value="Junior">Junior</option>
+                <option value="Senior">Senior</option>
+            </select>
         </div>
+
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
 
