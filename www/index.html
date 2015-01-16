@@ -1,37 +1,74 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title>Vault Box</title>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+      <title>Vault Box</title>
 
-    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+      <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
 
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-    <link href="css/ionic.app.css" rel="stylesheet">
-    -->
+      <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+      <link href="css/ionic.app.css" rel="stylesheet">
+      -->
 
-    <!-- ionic/angularjs js -->
-    <script src="lib/ionic/js/ionic.bundle.js"></script>
+      <!-- ionic/angularjs js -->
+      <script src="lib/ionic/js/ionic.bundle.js"></script>
 
-    <!-- cordova script (this will be a 404 during development) -->
-    <script src="cordova.js"></script>
+      <!-- cordova script (this will be a 404 during development) -->
+      <script src="cordova.js"></script>
 
-    <!-- your app's js -->
-    <script src="js/app.js"></script>
-  </head>
-  <body ng-app="starter">
-
-    <ion-pane>
-      <ion-header-bar class="bar-dark">
-        <h1 class="title">Vault Box</h1>
-      </ion-header-bar>
-      <ion-content>
-          <p><a href="athletes.html" class="button button-block icon-right ion-plus button-assertive">Athletes</a></p>
-          <p><a href="" class="button button-block icon-right ion-plus button-positive">Events</a></p>
-
-      </ion-content>
-    </ion-pane>
-  </body>
-</html>
+      <!-- your app's js -->
+      <script src="js/app.js"></script>
+    </head>
+    <body ng-app="starter">
+        <!-- A topbar that updates as the application state changes. -->
+        <!-- Set the color of the bar to blue -->
+        <ion-nav-bar class="bar-positive nav-title-slide-ios7">
+            <!-- Creates a back button inside an ion-Nav-Bar -->
+            <ion-nav-back-button class="button-icon ion-arrow-left-c">
+            </ion-nav-back-button>
+        </ion-nav-bar>
+        
+        <!-- Used to render templates in the application -->
+        <ion-nav-view></ion-nav-view>
+        
+        <!-- Template for the home screen -->
+        <script id='home.html' type='text/ng-template'>
+            <!-- Update topbar title -->
+            <ion-view title="Home">
+              <ion-content>
+                <p>
+                  <!-- Plus button for Events -->
+                  <a class="button icon ion-plus" href="#/newEvent"></a>
+                  Events
+                  <!-- Clipboard button for Events -->
+                  <a class="button icon ion-clipboard" href="#/viewEvents"></a>
+                </p>
+              </ion-content>
+            </ion-view>
+        </script>
+        
+        <!-- Template for the new event creation page -->
+        <script id="newEvent.html" type="text/ng-template">
+            <!-- Update topbar title -->
+            <ion-view view-title="Create New Event">
+              <ion-content class="padding">
+                <p>
+                </p>
+              </ion-content>
+            </ion-view>
+        </script>
+        
+        <!-- Template for the view events page -->
+        <script id="viewEvents.html" type="text/ng-template">
+            <!-- Update topbar title -->
+            <ion-view view-title="View Events">
+              <ion-content class="padding">
+                <p>
+                </p>
+              </ion-content>
+            </ion-view>
+        </script>
+    </body>
+  </html>
