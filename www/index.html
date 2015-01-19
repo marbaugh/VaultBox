@@ -12,6 +12,9 @@
       <link href="css/ionic.app.css" rel="stylesheet">
       -->
 
+      <!-- ngCordova js -->
+      <script src="js/ng-cordova.min.js"></script>
+
       <!-- ionic/angularjs js -->
       <script src="lib/ionic/js/ionic.bundle.js"></script>
 
@@ -52,13 +55,37 @@
         <!-- Template for the new event creation page -->
         <script id="newEvent.html" type="text/ng-template">
             <!-- Update topbar title -->
-            <ion-view view-title="Create New Event">
-              <ion-content class="padding">
-                <p>
-                </p>
-              </ion-content>
+            <ion-view view-title="New Event">
+            <ion-content class="padding">
+            <p>
+            <div class="list">
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Event Name</span>
+                    <input type="text" placeholder="Vault Box Invitational">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Event Location</span>
+                    <input type="text" placeholder="Vault Box University">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Date</span>
+                    <input type="date">
+                </label>
+                <a class="button button-block button-assertive" href="#/event">Begin Event</a>
+            </div>
+            </p>
+            </ion-content>
             </ion-view>
         </script>
+        
+        <!-- Template for the 'current event' screen -->
+        <script id='event.html' type='text/ng-template'>
+            <!-- Update topbar title -->
+            <ion-view title="Event">
+            <ion-content>
+            </ion-content>
+            </ion-view>
+            </script>
         
         <!-- Template for the view events page -->
         <script id="viewEvents.html" type="text/ng-template">
