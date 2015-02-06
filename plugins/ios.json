@@ -19,20 +19,6 @@
                         {
                             "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
                             "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"SQLitePlugin\"><param name=\"ios-package\" value=\"SQLitePlugin\" /></feature>",
-                            "count": 1
-                        }
-                    ]
-                }
-            },
-            "framework": {
-                "parents": {
-                    "libsqlite3.dylib": [
-                        {
-                            "xml": "false",
-                            "count": 1
                         }
                     ]
                 }
@@ -41,16 +27,13 @@
     },
     "installed_plugins": {
         "com.ionic.keyboard": {
-            "PACKAGE_NAME": "com.ionicframework.vaultbox919784"
+            "PACKAGE_NAME": "com.ionicframework.vaultbox924244"
         },
         "org.apache.cordova.console": {
-            "PACKAGE_NAME": "com.ionicframework.vaultbox919784"
+            "PACKAGE_NAME": "com.ionicframework.vaultbox924244"
         },
         "org.apache.cordova.device": {
-            "PACKAGE_NAME": "com.ionicframework.vaultbox919784"
-        },
-        "com.brodysoft.sqlitePlugin": {
-            "PACKAGE_NAME": "com.ionicframework.vaultbox919784"
+            "PACKAGE_NAME": "com.ionicframework.vaultbox924244"
         }
     },
     "dependent_plugins": {}
